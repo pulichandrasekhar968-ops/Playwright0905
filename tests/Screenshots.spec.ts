@@ -10,6 +10,6 @@ test ('screenshot', async({page})=>{
 
     //await page.screenshot({path:'Screenshots/Fullloginpage.png',fullPage:true});
 
-    await page.screenshot({path:'Screenshots/'+'lobloginpage.png'+ timestamp +'.png'});
+    await page.screenshot({path:'Screenshots/'+'lobloginpage'+ timestamp +'.png'});
 
 })
