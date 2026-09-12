@@ -14,10 +14,10 @@ export class LogInPage {
         this.Submit = page.getByRole('button', { name: "Submit" });
     }
 
-    async login(Username: String, Password: String) {
-        this.Username.fill("Username");
-        this.Password.fill("Password");
-        this.Submit.click();
+    async login(Username: string, Password: string) {
+        await this.Username.fill(Username);
+        await this.Password.fill(Password);
+        await this.Submit.click();
 
     }
 
