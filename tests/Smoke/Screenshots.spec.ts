@@ -6,9 +6,9 @@ test ('screenshot', async({page})=>{
 
     const timestamp = Date.now()
 
-    await page.screenshot({path:'Screenshots/loginpage1.png'});
+    await page.screenshot({path:'Screenshots/loginpage.png'});
 
-    //await page.screenshot({path:'Screenshots/Fullloginpage1.png',fullPage:true});
+    //await page.screenshot({path:'Screenshots/Fullloginpage.png',fullPage:true});
 
     //await page.screenshot({path:'Screenshots/'+'lobloginpage'+ timestamp +'.png'});
 
