@@ -10,14 +10,15 @@ test('Locators', async ({ page }) => {
     await page.getByRole('radio', { name: 'Female' }).check();
     await page.getByRole('checkbox',{name:'Monday'}).check();
     //await page.locator('#country').selectOption({value:'canada'});
-    //await page.locator('#country').selectOption({label:'France'});
-    await page.locator('#country').selectOption({index:9});
+    await page.locator('#country').selectOption({label:'France'});
+    //await page.locator('#country').selectOption({index:7});
     //await page.getByRole('link',{ name:'Apple'}).click();
     //await page.getByPlaceholder('Section 1').fill('puli');
-    await page.locator('#input1').fill('puli')
+    await page.locator('#input1').fill('puli');
+    await page.getByRole('button',{name:'Submit'}).click();
     //await page.getByPlaceholder('Enter text for Section 1').fill('First section input');
     //await page.getByRole('button', { name: 'Submit' }).nth(0).click();
-    await page.locator('#btn1').click();
+    //await page.locator('#btn1')..click();
     await page.pause();
 
 })
