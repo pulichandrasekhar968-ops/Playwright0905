@@ -39,10 +39,10 @@ test('saucedemo', async({page})=>{
 
    await page.locator('[data-test="continue"]').click();
 
-   //await page.locator('#cancel').click();
+   await page.locator('#cancel').click();
 
    await page.getByTestId('finish').click();
 
 
-   await page.pause();
+   //await page.pause();
 })
