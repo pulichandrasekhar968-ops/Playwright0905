@@ -28,7 +28,7 @@ test('shopify', async({page})=>{
 
     const smallCatalogs = page.locator('a[data-ga-label="small-inventory"]:visible');
 
-    //await expect(smallCatalogs).toHaveCount(1);
+    await expect(smallCatalogs).toHaveCount(1);
     
     await smallCatalogs.click();
 
@@ -38,7 +38,5 @@ test('shopify', async({page})=>{
 
     //await page.getByText('Small catalogs',{exact:true}).first().click();
 
-   await page.pause();
-
-
+   
 })
