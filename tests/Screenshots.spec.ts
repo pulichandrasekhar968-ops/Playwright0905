@@ -14,4 +14,4 @@ test ('screenshot', async({page})=>{
 
 })
 
-path:'Screenshots/'+'loginpage1'+timestamp+'.png'
+//path:'Screenshots/'+'loginpage1'+timestamp+'.png'
